@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+rewritecond %{http_host} ^nulldevelopment.hr [nc]
+rewriterule ^(.*)$ http://www.nulldevelopment.hr/$1 [r=301,nc]
+
